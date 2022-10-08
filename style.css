@@ -1,0 +1,166 @@
+*
+{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    box-sizing: border-box;
+    min-height: 100vh;
+    background:url("layer-170971_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-body
+{
+
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   overflow: hidden;
+}
+header
+{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.add_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 300px;
+    height: 150px;
+    background:rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    /* box-shadow: inset -6px -4px 10px rgba(255, 255, 255, 0.3); */
+    border-radius: 10px;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+.add_btn span 
+{
+    font-size: 20px;
+    font-family: inherit;
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-weight: 600;
+}
+.add_btn  button
+{
+    border: 2px double indianred ;
+    border-radius: 100%;
+    padding: 10px;
+}
+.add_btn  button i
+{
+font-size: 30px;
+color:rgb(211, 102, 102);
+transition: 0.1s  ease;
+}
+.add_btn  button i:hover{
+transform: scale(1.4);
+}
+.main
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    margin:15px 10px 36px 10px;
+}
+.navbar
+{
+    background-color:rgb(211, 118, 149);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navbar i
+{
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+.navbar .delete:hover{
+    transform: scale(1.4);
+}
+.navbar .edit:hover{
+    transform: scale(1.4);
+}
+
+.textarea1
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(255, 255, 255, 0.3);
+    padding: 10px;
+}
+.textarea1 textarea
+{
+    outline: none;
+    border: none;
+    height:200px;
+    width: 100%;
+    resize: none;
+    background: transparent;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.textarea1 .date
+{
+    border-top: 1px solid whitesmoke;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+.hidden
+{
+    display: none;
+}
+.main .store
+{
+    outline: none;
+    border: none;
+    height:170px;
+    width: 93.5%;
+    resize: none;
+    background:rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 440px) 
+{
+
+    .main{
+        margin-top: 20px;
+    }
+    .main-body
+    {
+       margin: 0 auto;
+    }
+    .add_btn
+    {
+        width: 230px;
+        height: 115px;
+        margin-bottom: 10px;
+    }
+}
